@@ -61,28 +61,40 @@ class _HomePageState extends ConsumerState<HomePage> {
                             ],),
                           ),
                         ],),
-                        Container(
-                          width: 60,
-                          height: 60,
-                          margin: EdgeInsets.all(10),
-                          color: Colors.blue,
-                          child: Text("Right"),
-                        ),
+                        Column(children: [
+                          Icon(Icons.join_right),
+                          Text("right")
+                        ],),
                       ],
                     ),
                     SizedBox(height: 20,),
-                    Container(
-                      color: Colors.blue,
-                      child: GridView.count(
-                        shrinkWrap: true,
-                        crossAxisCount: 4,
-                        children: [
-                          Icon(Icons.abc),
-                          Icon(Icons.abc),
-                          Icon(Icons.abc),
-                          Icon(Icons.abc),
-                        ],
-                      ),
+                    GridView.count(
+                      shrinkWrap: true,
+                      crossAxisSpacing: 10,
+                      // mainAxisSpacing: 10,
+                      crossAxisCount: 5,
+                      children: [
+                        Column(children: [
+                          Icon(Icons.list_rounded),
+                          Text("title")
+                        ],),
+                        Column(children: [
+                          Icon(Icons.play_arrow_rounded),
+                          Text("title")
+                        ],),
+                        Column(children: [
+                          Icon(Icons.show_chart_rounded),
+                          Text("title")
+                        ],),
+                        Column(children: [
+                          Icon(Icons.shop_2_rounded),
+                          Text("title")
+                        ],),
+                        Column(children: [
+                          Icon(Icons.person_2_rounded),
+                          Text("title")
+                        ],),
+                      ],
                     )
                   ]
               ),
