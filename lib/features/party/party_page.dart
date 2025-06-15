@@ -13,9 +13,10 @@ class _PartyPageState extends ConsumerState<PartyPage> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    return const Scaffold(
+    return Scaffold(
+      appBar: AppBar(title: const Text("Party")),
       backgroundColor: Colors.white,
-      body: SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 24.0),

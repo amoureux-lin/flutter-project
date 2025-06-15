@@ -13,9 +13,10 @@ class _MessagePageState extends ConsumerState<MessagePage> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    return const Scaffold(
+    return Scaffold(
+      appBar: AppBar(title: Text("Message")),
       backgroundColor: Colors.white,
-      body: SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 24.0),

@@ -59,4 +59,4 @@ flutter:
     - .env.development
     - .env.production
     - assets/images/
-    - assets/icons/
+    - assets/font/CupertinoIcons.ttf

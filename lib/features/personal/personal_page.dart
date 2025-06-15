@@ -42,7 +42,7 @@ class _PersonalPageState extends ConsumerState<PersonalPage> {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(75),
                                   image: DecorationImage(
-                                    image: AssetImage('image/avatar.jpg'),
+                                    image: AssetImage('images/avatar.jpg'),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
